@@ -20,14 +20,23 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
   </head>
 
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      Date: <div id="datepicker"></div>
       <p id="currentDay" class="lead"></p>
     </header>
+   
     <div class="container bg-secondary">
       <div class="container.form-control bg-secondary">
       <!-- Timeblocks go here -->
